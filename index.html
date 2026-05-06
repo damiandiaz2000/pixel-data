@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel & Data - Soluciones Digitales</title>
+    <style>
+        :root {
+            --primary-blue: #38bdf8;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-gray: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navegación */
+        nav {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--primary-blue); }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+        }
+
+        .logo-pd {
+            font-size: 5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin: 0;
+            letter-spacing: -4px;
+        }
+
+        /* Contenedores */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Estilo de Misión, Visión y Valores */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .about-card {
+            background: rgba(56, 189, 248, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.1);
+        }
+
+        .about-card h3 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        /* Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-10px);
+        }
+
+        .card h2 { color: var(--primary-blue); margin-top: 0; }
+        .card ul { padding-left: 20px; color: var(--text-gray); }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: var(--primary-blue);
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover { background-color: #7dd3fc; transform: scale(1.05); }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: var(--text-gray);
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+</nav>
+
+<div class="hero" id="inicio">
+    <p class="logo-pd">PD</p>
+    <h1>PIXEL & DATA</h1>
+    <p style="font-size: 1.2rem; color: var(--text-gray);">Ingeniería de Software y Análisis de Datos en Guayaquil</p>
+    <a href="https://wa.me/TUNUMERO" class="cta-btn">Empezar Proyecto</a>
+</div>
+
+<div class="container">
+    
+    <section id="nosotros">
+        <h2 style="text-align: center; margin-bottom: 40px;">Nuestra Identidad</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Misión</h3>
+                <p>Digitalizar y optimizar negocios locales mediante herramientas tecnológicas eficientes que faciliten la toma de decisiones estratégicas.</p>
+            </div>
+            <div class="about-card">
+                <h3>Visión</h3>
+                <p>Ser el aliado tecnológico principal de los comercios en Ecuador, liderando la implementación de IA y análisis de datos a medida.</p>
+            </div>
+            <div class="about-card">
+                <h3>Valores</h3>
+                <p>Innovación constante, transparencia técnica y un compromiso absoluto con el crecimiento de cada uno de nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2 style="text-align: center; margin-bottom: 40px;">Servicios Especializados</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h2>Dashboards</h2>
+                <p>Control total de tu negocio. Visualiza ventas, stock y márgenes de ganancia en tiempo real sin complicaciones.</p>
+                <ul>
+                    <li>Análisis en Excel y Looker</li>
+                    <li>Automatización de reportes</li>
+                    <li>Control de inventarios</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Páginas Web</h2>
+                <p>Sitios modernos y rápidos. Creamos la presencia digital que tu marca necesita para destacar y vender 24/7.</p>
+                <ul>
+                    <li>Diseño Mobile-First</li>
+                    <li>Landing Pages de conversión</li>
+                    <li>Catálogos interactivos</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Chatbots</h2>
+                <p>Atención inmediata. Implementamos asistentes con IA que responden dudas y agendan pedidos por ti.</p>
+                <ul>
+                    <li>Atención 24/7</li>
+                    <li>WhatsApp e Instagram</li>
+                    <li>Flujos de venta inteligentes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Pixel & Data | Guayaquil, Ecuador</p>
+    <p style="font-size: 0.8rem;">Desarrollado por Damian Diaz - Ing. en Ciencia de Datos e IA</p>
+</footer>
+
+</body>
+</html>
